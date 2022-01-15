@@ -109,13 +109,102 @@
 
 # kazda_wartosc = "test" and [123]
 # print(kazda_wartosc)
-#
 # niepusta_wartosc = 0 or 0.0 or "" or [] or "test" or [123]
 # print(niepusta_wartosc)
 
 # x = float(input("podaj x "))
-# y = float(input("podaj y "))
-#
 # print(x>3 and x<10)
 
+# x = float(input("podaj x "))
+# print(x>4 or x<3)
+
+
+# x = float(input("podaj x "))
+# print(not(x>3 and x<10))
+
+# wartosc = 0
+# wartosc = "warunek spełniony" if True else "warunek niespełniony"
+# # if True: wartosc = "warunek spełniony"
+# print(wartosc)
+
+# nice = False
+# nice = True
+# personality = ("wredny", "mily") [nice]
+# print("kot jest ", personality)
+
+# string = 'Python'
+# for litera in string:
+#    print('litera:', litera)
+# litera = string[0]
+# print('litera:', litera)
+# litera = string[1]
+# print('litera:', litera)
+# litera = string[2]
+# print('litera:', litera)
+# litera = string[3]
+# print('litera:', litera)
+# litera = string[4]
+# print('litera:', litera)
+# litera = string[5]
+# print('litera:', litera)
+
+# warzywa = ['marchew', 'kalafior', 'kapusta']
+# for warzywo in warzywa:
+#     print('warzywo:', warzywo)
+
+# warzywa = ['marchew', 'kalafior', 'kapusta']
+# i = 1
+# for warzywo in warzywa:
+#     print('warzywo:', i, warzywo)
+#     i += 1
+
+# print(4/7)
+# print(4//7)
+# print(4%7)
+
+# lista = ["Rafal", "Agata", "Michal", "Pawel", "Grzegorz", "Robert", "Aneta", "Tomasz", "Monika", "Klaudia", "Wiktor", "Kinga", "Marcin", "Tomasz", "Przemyslaw"]
+# lista.sort()
+# i=0
+# for t in lista:
+#     if t[-1]=="a":
+#         i=i+1
+# print(i)
+
+# print("Przykład range() w Pythonie")
+# print("Uzyskaj liczby z zakresu od 0 do 5")
+# for i in range(6):
+#     print(i, end=', ')
+
+
+# print(range(2, 11, 2))
+#
+# lista = list(range(2, 11, 2))
+# print(lista)
+
+# for i in range(5):
+#     print(i)
+# else:
+#     print("gotowe")
+
+# liczby = list()
+# i = 2
+# while i < 11:
+#     liczby.append(i)
+#     i += 2
+# print(liczby) # [2, 4, 6, 8, 10]
+
+# lines = list()
+# print('Wprowadź tekst po linijce.')
+# print('Żeby zakończyć wprowadź pustą linię.')
+# line = input('Następna linijka: ')
+# while line != '':
+#     lines.append(line)
+#     line = input('Następna linijka: ')  # reset
+# print(lines)
+
+# for num in range(1, 20):
+#     if not num % 2:
+#         print("kolejna liczba parzysta ", num)
+#         continue
+#     print("kolejna liczba: ", num)
 
