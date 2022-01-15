@@ -72,6 +72,7 @@
 # print(len(x))
 # print(x)
 
+#   slownik
 # tel = {}   #pusty
 # tel = {'Maja':57657, 'Jasio':463557}
 # tel["Ola"] = 3573577
@@ -81,4 +82,40 @@
 #
 # tel = dict([('Jan', 4139277), ('Kazimierz', 4126327)])
 # print(tel)
+
+#   zbiór
+# zbior = {"ala", "kot", 1, 2.89}
+# print(zbior)
+    #randomowy wynik , nie powtaża elementów
+
+# x = float(input("podaj liczbe 1 "))
+# y = float(input("podaj liczbe 2 "))
+# print(x/y)
+# print(x//y)
+# print(x%y)
+
+# x = 8
+# y = 15
+# if x>3 or y%2==0:
+#     print("conajmniej jeden z warunkow jest spelniony")
+# elif x<=3 and y%2!=0:
+#     print("zaden warunek nie zostal spelniony")
+
+# x = False
+# if not x:
+#     print("warunek spełniony")
+# else:
+#     print("warunek niespełniony")
+
+# kazda_wartosc = "test" and [123]
+# print(kazda_wartosc)
+#
+# niepusta_wartosc = 0 or 0.0 or "" or [] or "test" or [123]
+# print(niepusta_wartosc)
+
+# x = float(input("podaj x "))
+# y = float(input("podaj y "))
+#
+# print(x>3 and x<10)
+
 
