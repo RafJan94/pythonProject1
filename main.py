@@ -202,9 +202,35 @@
 #     line = input('Następna linijka: ')  # reset
 # print(lines)
 
+# for n in range(2, 100):
+#     for x in range(2, n):
+#         if n % x == 0:
+#             break
+#     else: # normalny koniec pętli
+#         print(n, 'jest liczbą pierwszą')
+
 # for num in range(1, 20):
 #     if not num % 2:
 #         print("kolejna liczba parzysta ", num)
 #         continue
 #     print("kolejna liczba: ", num)
 
+# x = int(input("pierwsza liczba: "))
+# y = int(input("druga liczba: "))
+# if x>y:
+#     z = y
+# else:
+#     z = x
+# for l in range(z,0, -1,):
+#     if x % l == 0 and y % l == 0:
+#         print(x, " i ", y, "dzieli sie przez ", l)
+#         break
+                #   do rozmyślenia
+
+name = input("Proszę wpisać swoje imię.")
+# Wpisz swoją odpowiedź tutaj.
+
+if len(name) > 0:
+    print(name)
+else:
+    Pass
