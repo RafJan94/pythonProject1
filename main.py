@@ -321,14 +321,24 @@
 # c = lista([-20, -4, -60, -8])
 # print(c)
 
-def google(x):      #zlicza liczbę znaków (częstotliwość znaków) w ciągu tekstowym
-    a={}
-    for i in x:
-        k = a.keys()
-        if i in k:
-            a[i] += 1
-        else:
-            a[i] = 1
-    return a
-z = google("maamoooth")
-print(z)
+# def google(x):      #zlicza liczbę znaków (częstotliwość znaków) w ciągu tekstowym
+#     a={}
+#     for i in x:
+#         k = a.keys()  #klucz .keys()
+#         if i in k:
+#             a[i] += 1
+#         else:
+#             a[i] = 1
+#     return a
+# z = google("maamoooth")
+# print(z)
+
+# def ciag(x):
+#     a = 0
+#     for i in x:
+#         if len(i) >= 2 and i[0] == i[-1]:       # do naprawy
+#             a += 1
+#
+#     return a
+# print(ciag(["aba",567, "abc", "coc", 12221, 404,]))
+
