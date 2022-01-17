@@ -283,3 +283,22 @@
 # x = fibbonaci_numbers(10)
 # print(x)
 
+# def ciag_znakow(x): # liczy ciąg znaków w stringu x
+#     a = 0
+#     for y in x:
+#         a += 1
+#     return a
+#
+# c = ciag_znakow("python")
+#
+# print(c)
+
+# def suma_listy(x):      #suma wartości listy
+#     a = 0
+#     for i in x:
+#         a+=i
+#     return a
+#
+# b = suma_listy([4, 8, 12, 4, 5])
+# print(b)
+
