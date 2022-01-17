@@ -310,13 +310,13 @@
 # c = iloczyn_listy([2, 4, 6,])
 # print(c)
 
-def lista(x):
-    a = 0
-    for i in x:
-        if i > a:
-            a = i
-    return a
-
-
-c = lista([2, 4, 60, 8])
-print(c)
+# def lista(x):       #największa wartość z listy
+#     a = x[0]
+#     for i in x:
+#         if i > a:
+#             a = i
+#     return a
+#
+#
+# c = lista([-2, -4, -60, -8])
+# print(c)
