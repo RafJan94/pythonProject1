@@ -312,11 +312,23 @@
 
 # def lista(x):       #największa wartość z listy
 #     a = x[0]
-#     for i in x:
+#     for i in x[1:]: #aby uniknąć pustego obliczenia dodajemy [1:] do x
 #         if i > a:
 #             a = i
 #     return a
 #
 #
-# c = lista([-2, -4, -60, -8])
+# c = lista([-20, -4, -60, -8])
 # print(c)
+
+def google(x):      #zlicza liczbę znaków (częstotliwość znaków) w ciągu tekstowym
+    a={}
+    for i in x:
+        k = a.keys()
+        if i in k:
+            a[i] += 1
+        else:
+            a[i] = 1
+    return a
+z = google("maamoooth")
+print(z)
