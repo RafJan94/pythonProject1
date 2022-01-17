@@ -227,10 +227,10 @@
 #         break
                 #   do rozmyślenia
 
-name = input("Proszę wpisać swoje imię.")
-# Wpisz swoją odpowiedź tutaj.
-
-if len(name) > 0:
-    print(name)
-else:
-    Pass
+# name = input("Proszę wpisać swoje imię.")
+# # Wpisz swoją odpowiedź tutaj.
+#
+# if len(name) > 0:
+#     print(name)
+# else:
+#     Pass
