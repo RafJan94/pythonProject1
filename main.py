@@ -302,3 +302,10 @@
 # b = suma_listy([4, 8, 12, 4, 5])
 # print(b)
 
+def iloczyn_listy(x):      #iloczyn wartości listy
+    a = x[0]
+    for i in x[1:]:
+        a*=i
+    return a
+c = iloczyn_listy([2, 4, 6,])
+print(c)
