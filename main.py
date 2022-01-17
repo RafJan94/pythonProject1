@@ -342,3 +342,10 @@
 #     return a
 # print(ciag(["aba",567, "abc", "coc", 12221, 404,]))
 
+
+def funkcja_1(krotkas):     #sortuje według 2 elementu
+    return krotkas[1]
+def krotkas(x):
+    a = sorted(x, key=funkcja_1)
+    return a
+print(krotkas([(2, 5), (1,2), (3,5), (2, 3)]))
