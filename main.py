@@ -234,3 +234,33 @@
 #     print(name)
 # else:
 #     Pass
+
+# name = input("Proszę wpisać swoje imię.")
+# # Wpisz swoją odpowiedź tutaj.
+#
+# if len(name) > 0:
+#     print(name)
+# else:
+
+# a = "Python"
+# b = 317
+#
+# print("a: {}, b: {}".format(a, b))
+# b, a = a, b
+# print("a: {}, b: {}".format(a, b))
+#  for n in range(2, 100):
+#     for x in range(2, n):
+#         if n % x == 0:
+#             break
+#     else: # normalny koniec pętli
+#         print(n, 'jest liczbą pierwszą')
+
+# for numer in range(1500,2701):
+#     if numer % 7==0 and numer % 5 ==0:
+#         print(numer)
+
+def simple_function():
+    print('Hello world!')
+    print('Wikipedia')
+
+simple_function()
