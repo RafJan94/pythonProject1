@@ -86,7 +86,7 @@
 #   zbiór
 # zbior = {"ala", "kot", 1, 2.89}
 # print(zbior)
-    #randomowy wynik , nie powtaża elementów
+# randomowy wynik , nie powtaża elementów
 
 # x = float(input("podaj liczbe 1 "))
 # y = float(input("podaj liczbe 2 "))
@@ -225,7 +225,7 @@
 #     if x % l == 0 and y % l == 0:
 #         print(x, " i ", y, "dzieli sie przez ", l)
 #         break
-                #   do rozmyślenia
+#   do rozmyślenia
 
 # name = input("Proszę wpisać swoje imię.")
 # # Wpisz swoją odpowiedź tutaj.
@@ -302,10 +302,21 @@
 # b = suma_listy([4, 8, 12, 4, 5])
 # print(b)
 
-def iloczyn_listy(x):      #iloczyn wartości listy
-    a = x[0]
-    for i in x[1:]:
-        a*=i
+# def iloczyn_listy(x):      #iloczyn wartości listy
+#     a = x[0]
+#     for i in x[1:]:
+#         a*=i
+#     return a
+# c = iloczyn_listy([2, 4, 6,])
+# print(c)
+
+def lista(x):
+    a = 0
+    for i in x:
+        if i > a:
+            a = i
     return a
-c = iloczyn_listy([2, 4, 6,])
+
+
+c = lista([2, 4, 60, 8])
 print(c)
