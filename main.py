@@ -336,16 +336,25 @@
 # def ciag(x):
 #     a = 0
 #     for i in x:
-#         if len(i) >= 2 and i[0] == i[-1]:       # do naprawy
+#         if len(i) >= 2 and i[0] == i[-1]:       # do rozpatrzenia
 #             a += 1
 #
 #     return a
 # print(ciag(["aba",567, "abc", "coc", 12221, 404,]))
 
 
-def funkcja_1(krotkas):     #sortuje według 2 elementu
-    return krotkas[1]
-def krotkas(x):
-    a = sorted(x, key=funkcja_1)
-    return a
-print(krotkas([(2, 5), (1,2), (3,5), (2, 3)]))
+# def funkcja_1(krotkas):     #sortuje według 2 elementu
+#     return krotkas[1]
+# def krotkas(x):
+#     a = sorted(x, key=funkcja_1)
+#     return a
+# print(krotkas([(2, 5), (1,2), (3,5), (2, 3)]))
+
+def ciag (x):
+    a = 0
+    for i in x:
+        if len(x)<2:
+            return ""
+        else:
+            return x[:2] + x[-2:]
+print(ciag("Py"))
