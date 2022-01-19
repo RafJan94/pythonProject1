@@ -382,3 +382,47 @@
 #
 # print(ciag(11))
 
+            #Wyjątki i obsługa błędów
+# try:
+#   ...
+#   <linie kodu>
+# except Exception as err:
+#   <obsługa wyjątku>
+
+# import sys      # przykladowy kod do op na pliku
+# try:
+#     f = open("plik.txt")
+#     s = f.readline()
+#     i = int(s.strip())  # Usuń spacje
+#     print(i)
+# except OSError as err:
+#     print("Błąd systemu: {0}".format(err))
+# except ValueError:
+#     print("Nie można dokonać konwersji.")
+# except:     # PEP 8: E722 nie używaj pustego 'except'
+#     print("Nieoczekiwany wyjątek:", sys.exc_info()[0])
+#     raise
+
+# x = -1
+#
+# if x < 0:
+#     raise Exception("Przepraszamy, brak liczb poniżej zera")
+
+
+# while True:       #pętla zwracająca wartość 1 ciągle
+#     try:
+#         x = int(input("podaj 1 liczbę: "))
+#         y = int(input("podaj 2 liczbę: "))
+#         print(int(x+y))
+#         break
+#     except ValueError:
+#         print("błąd")
+
+# a = int(input("podaj 1 liczbę: "))
+# b = int(input("podaj 2 liczbę: "))
+# try:
+#     result = a / b
+# except ZeroDivisionError:
+#     result = "Nie można dzielić przez 0 "
+# print(result)
+
