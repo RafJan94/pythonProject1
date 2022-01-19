@@ -444,7 +444,8 @@
 # else:
 #     print("Ilość wierszy: " + len(f.readlines()))
 #     f.close()
-
+import TestR
+plik = TestR
 try:
     plik = open("TestR.py", "r")
     plik.write("string Lorum Ipsum")
