@@ -426,3 +426,30 @@
 #     result = "Nie można dzielić przez 0 "
 # print(result)
 
+# lista = ["Rafal", 5, 2.4]
+#
+# try:
+#     msg = lista[4]
+# except IndexError as err:
+#     msg = "Jesteś poza zakresem listy" + " (" + str(err) + ") "
+# print(msg)
+
+
+# import TestR
+# arg = TestR
+# try:
+#     f = open(arg, "r")
+# except IOError:
+#     "Nie można otworzyć pliku"
+# else:
+#     print("Ilość wierszy: " + len(f.readlines()))
+#     f.close()
+
+try:
+    plik = open("TestR.py", "r")
+    plik.write("string Lorum Ipsum")
+except IOError:
+    print("cos poszlo nie tak")
+finally:
+    plik.close()
+
