@@ -350,11 +350,35 @@
 #     return a
 # print(krotkas([(2, 5), (1,2), (3,5), (2, 3)]))
 
-def ciag (x):
-    a = 0
-    for i in x:
-        if len(x)<2:
-            return ""
-        else:
-            return x[:2] + x[-2:]
-print(ciag("Py"))
+# def ciag (x):
+#         if len(x)<2:
+#             return ""   #return konczy instrukcje i nie trzeba dawac else
+#         return x[:2] + x[-2:]   # aby działało wcięcie równe if
+# print(ciag("Py"))
+
+# def fibbonaci_numbers(n):
+#     ''' zwraca liczby Fibonacciego mniejsze od n '''
+#     wynik = []
+#     a, b = 0, 1
+#     while a < n:
+#     # while len(wynik) < n: # gdy chcemy ilość wyników
+#         wynik.append(a)
+#         a, b = b, a+b
+#     return wynik
+
+
+# def silnia(n):
+#     if n == 1:
+#         return 1
+#     return silnia(n-1)*n
+#
+# print(silnia(5))
+
+
+# def ciag(x):
+#     if x<=1:
+#         return x
+#     return ciag(x-1) + ciag(x-2)
+#
+# print(ciag(11))
+
