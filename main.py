@@ -479,18 +479,21 @@
 
 
 # Otwórz plik
-
 fo = open("text.txt", "r")
 print("Nazwa pliku: ", fo.name)
 
-line = fo.readline()
-print("Czytaj linię: >" + line + "<")   #   teraz wskaźnik jest w następnej linii
+# Uzyskaj aktualną pozycję pliku.
+pos = fo.tell()
+print("Aktualna pozycja: " + str(pos))
 
-# Ponownie ustaw wskaźnik na początek
-fo.seek(0, 0)  # fo.seek(0)
 line = fo.readline()
 print("Czytaj linię: >" + line + "<")
 
+# Uzyskaj aktualną pozycję pliku.
+pos = fo.tell()
+print("Aktualna pozycja: " + str(pos))
+
 # Zamknij otwarty plik
 fo.close()
+
 
