@@ -566,3 +566,14 @@
 # Napisz program, który otworzy plik sonety.txt i sprawdzi liczbę słów w całym tekście
 # Dodatkowo, napisz funkcję, która zlicza słowa tylko w co 7 linijce tekstu
 
+
+    #   impotowanie
+
+# import os
+# os.system("dir")
+
+from time import sleep  #   z modułu time importujemy tylko funkcję sleep
+print("Dobranoc")
+sleep(2)
+print("dzien dobry")
+
