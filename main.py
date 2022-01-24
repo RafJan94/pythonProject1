@@ -514,6 +514,17 @@
 # Napisz program w Pythonie, który odczyta plik tekstowy wiersz po wierszu i zapisze go na liście content_list.
 # content_list to lista zawierająca przeczytane wiersze.
 
-with open("text.txt", "r") as file:
-    content_list = file.readlines()
-print(content_list)
+# with open("text.txt", "r") as file:
+#     content_list = file.readlines()
+# print(content_list)
+
+# content_list = []       #   sposób z pętlą
+# with open("text.txt", "r") as file:
+#     for i in file:
+#         content_list.append(i)
+# print(content_list)
+
+# Napisz program w Pythonie, który znajdzie najdłuższe słowa w pliku tekstowym
+
+
+
