@@ -478,22 +478,42 @@
 # f.write(s)
 
 
-# Otwórz plik
-fo = open("text.txt", "r")
-print("Nazwa pliku: ", fo.name)
+# # Otwórz plik
+# fo = open("text.txt", "r")
+# print("Nazwa pliku: ", fo.name)
+#
+# # Uzyskaj aktualną pozycję pliku.
+# pos = fo.tell()
+# print("Aktualna pozycja: " + str(pos))
+#
+# line = fo.readline()
+# print("Czytaj linię: >" + line + "<")
+#
+# # Uzyskaj aktualną pozycję pliku.
+# pos = fo.tell()
+# print("Aktualna pozycja: " + str(pos))
+#
+# # Zamknij otwarty plik
+# fo.close()
 
-# Uzyskaj aktualną pozycję pliku.
-pos = fo.tell()
-print("Aktualna pozycja: " + str(pos))
+# Napisz program w Pythonie, aby odczytać i wyświetlić cały plik tekstowy.
 
-line = fo.readline()
-print("Czytaj linię: >" + line + "<")
-
-# Uzyskaj aktualną pozycję pliku.
-pos = fo.tell()
-print("Aktualna pozycja: " + str(pos))
-
-# Zamknij otwarty plik
-fo.close()
+# fo = open("text.txt", "r")
+# print(fo.read())
 
 
+
+# 1) bez użycia instrukcji with
+# file = open('file_path', 'w')
+# file.write('hello world !')
+# file.close()
+
+# with open("file_path.txt", "w") as file:
+#     file.write('hello world !')
+
+# Napisz program w Pythonie, który odczyta plik tekstowy wiersz po wierszu i zapisze go na liście content_list.
+# content_list to lista zawierająca przeczytane wiersze.
+
+with open("text.txt", "r") as file:
+    content_list = file.readlines()
+print(content_list)
