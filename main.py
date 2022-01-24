@@ -382,7 +382,7 @@
 #
 # print(ciag(11))
 
-            #Wyjątki i obsługa błędów
+# Wyjątki i obsługa błędów
 # try:
 #   ...
 #   <linie kodu>
@@ -502,7 +502,6 @@
 # print(fo.read())
 
 
-
 # 1) bez użycia instrukcji with
 # file = open('file_path', 'w')
 # file.write('hello world !')
@@ -535,3 +534,35 @@
 #     if len(n) > len(c):
 #         c = n
 # print(c)
+
+#       funkcja znajdująca najdłuższe ciągi
+
+# def longest_word(filename):
+#     with open(filename, 'r') as infile:
+#         words = infile.read().split()
+#     max_len = len(max(words, key=len))
+#     return [word for word in words if len(word) == max_len]
+#
+#
+# print(longest_word('text.txt'))
+
+# Napisz program w Pythonie, który zapisze listę do pliku.
+
+# lista = ["reas", "sefew", 2535, "wefwe"]
+#
+# with open("nowy_plik", "w") as file:    # tworzy nowy_plik
+#     for i in lista:
+#         file.write(str(i) +"\n")
+
+# Napisz program w Pythonie, aby ocenić, czy plik jest zamknięty, czy nie.
+
+# file = open("text.txt", "r")
+# print(file.closed)
+# if not file.closed:
+#     file.close()
+# print(file.closed)
+
+#                           Zadanie
+# Napisz program, który otworzy plik sonety.txt i sprawdzi liczbę słów w całym tekście
+# Dodatkowo, napisz funkcję, która zlicza słowa tylko w co 7 linijce tekstu
+
