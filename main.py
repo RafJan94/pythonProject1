@@ -572,8 +572,33 @@
 # import os
 # os.system("dir")
 
-from time import sleep  #   z modułu time importujemy tylko funkcję sleep
-print("Dobranoc")
-sleep(2)
-print("dzien dobry")
+# from time import sleep  #   z modułu time importujemy tylko funkcję sleep
+# print("Dobranoc")
+# sleep(2)
+# print("dzien dobry")
 
+# import time   # bez określania funkcji
+# print("Dobranoc")
+# time.sleep(2)     #   trzeba po kropce
+# print("Dzień dobry")
+
+# from time import *    # importuje wszystkie funkcje z modułu
+# print("dobranoc")
+# sleep(2)
+# print("dzien dobry")
+
+# import time
+# print(dir(time))  #   wszystkie obiekty w module
+
+# from math import sin, pi  #   import z modułu math funkcji sin i pi
+# a = sin(pi/2)
+# print(a)
+
+def lemon(l):   #   tworzy moduł fruit
+    print('Lemoniada nr', l)
+
+import fruit
+# from fruit import lemon
+
+fruit.lemon(5)
+# lemon(5)
