@@ -526,5 +526,12 @@
 
 # Napisz program w Pythonie, który znajdzie najdłuższe słowa w pliku tekstowym
 
-
-
+# with open("text.txt", "r") as file:
+#     a = file.read()
+#
+# b = a.split()
+# c = ""
+# for n in b:
+#     if len(n) > len(c):
+#         c = n
+# print(c)
