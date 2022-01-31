@@ -927,4 +927,288 @@
 # print(x.is_integer())
 # print(type(x.is_integer))
 
-from direct.ShowBase.Showbase import
+    #   KLASY
+
+# class NazwaKlasy:
+#     def nazwa_metody(self, argument1, argument2):   # musi być we wcięciu aby była metoda - w przeciwnym wypadku wychodzi funkcja
+#         print(argument1)
+#         print(argument2)
+# obiekt = NazwaKlasy()
+# obiekt.nazwa_metody("arg1", "arg2") # argument self jest domniemywany - nie musimy go podawać (podstawia się automatycznie obiekt, który wywołał metodę)
+
+# class MyClass:
+#     """Dokumentacja Klasy"""    # dokumentacja klasy
+#
+# help(MyClass)
+
+# class NazwaKlasy:
+#     atrybut_pierwszy = "wartosc"
+#     atrybut_drugi = 123.0
+
+# class NazwaKlasy:
+#     def __init__(self, trzeci):
+#         self.atrybut_pierwszy = "Wartość"
+#         self.atrybut_drugi = 123.0
+#         self.atrybut_trzeci = trzeci
+
+# class MyClass:
+#     x = 5
+#
+# p1 = MyClass()
+#
+# print(p1.x)
+
+# class Parrot:
+#
+#     # atrybut klasy
+#     species = "ptak"
+#
+#     # atrybut instancji
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+#
+#     # metoda instancji
+#     def sing(self, song):
+#         return self.name + " śpiewa " + song
+#
+#     def dance(self):
+#         return self.name + " teraz tańczy"
+#
+# # utworzenie instancji klasy Parrot
+# blu = Parrot("Blu", 10)
+# woo = Parrot("Woo", 15)
+#
+# # uzyskanie dostępu do atrybutów klasy
+# print("Blu to", blu.__class__.species)
+# print("Woo to również", woo.__class__.species)
+# # za chwilę wytłumaczymy sobie dokładniej o co chodzi z __class__
+#
+# # uzyskanie dostępu do atrybutów instancji
+# print(blu.name, "ma", blu.age, "lat")
+# print(woo.name, "ma", woo.age, "lat")
+#
+# blu = Parrot("Blu", 10)
+
+# class Person:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+#     def my_func(self):
+#         print("Czesc mam na imie " + self.name)
+#
+# p1 = Person("Jan", 36)
+# p1.my_func()
+
+# class Person:
+#     def __init__(mysillyobject, name, age):
+#         mysillyobject.name = name
+#         mysillyobject.age = age
+#
+#     def my_func(abc):
+#         print("Cześć, mam na imię " + abc.name)
+#
+# p1 = Person("Jan", 36)
+# p1.my_func()
+#
+# p1.age = 40
+#
+# print(p1.age)
+#
+# del p1  # słuzy do usuwania obiektów w całym Pythonie
+#
+# p1.my_func()
+
+# Klasa o nazwie MyClass z atrybutem o nazwie x
+# No to jeszcze raz! Utwórz klasę o nazwie MyClass z atrybutem o nazwie x = 5.
+# Teraz użyj klasy o nazwie MyClass do stworzenia obiektu.
+# Utwórz obiekt o nazwie p1 i wydrukuj wartość x
+
+# class MyClass:
+#     x = 5
+#
+# p1 = MyClass()
+# print(p1.x)
+
+
+# class KontoBankowe:
+#     def __init__(self, nazwa, stan = 0):
+#         self.nazwa = nazwa
+#         self.stan = stan
+#
+#     def info(self):
+#         print("nazwa:", self.nazwa)
+#         print("stan:", self.stan)
+#
+#     def wyplac(self, ilosc):
+#         self.stan -= ilosc
+#
+#     def wplac(self, ilosc):
+#         self.stan += ilosc
+#
+# jk = KontoBankowe("Jan Kowalski", 1000)
+#
+# jk.info()
+# jk.wplac(2000)
+# jk.wyplac(2500)
+# jk.info()
+# jk.stan = 0
+# jk.info()
+
+# lasa (class) dotycząca wyimaginowanego inwentarza odrzutowca jest już dla Was zdefiniowana.
+# Również instancja tej klasy Jets jest stworzona i przypisana do zmiennej first_item. Wydrukuj name z first_item.
+
+# class Jets:
+#
+#
+#     def __init__(self, name, country):
+#         self.name = name
+#         self.origin = country
+#
+#
+#
+# first_item = Jets("F16", "USA")
+#
+#
+# a= first_item.name
+# print(a)
+
+# Tym razem wydrukuj origin z first_item.
+
+
+# class Jets:
+#     model = None
+#     country = 0
+#
+#     def __init__(self, name, country):
+#         self.name = name
+#         self.origin = country
+#
+#
+#
+# first_item = Jets("F16", "USA")
+#
+# a=first_item.name
+# b= first_item.origin
+#
+#
+# print(a,b)
+
+# Utwórz klasę Vehicle z atrybutami instancji max_speed i mileage.
+# Stwórz obiekt i w trakcie inicjacji przypisz jego atrybutom (odpowiednio) wartości 240 i 18.
+# Wydrukuj te atrybuty.
+
+# class Vehicle:
+#     def __init__(self, max_speed, mileage):
+#         self.max_speed = max_speed
+#         self.mileage = mileage
+#
+# obiekt = Vehicle(240, 18)
+#
+# print(obiekt.mileage, obiekt.max_speed)
+
+# Utwórz klasę Car z dwoma atrybutami instancji:
+# .color, który przechowuje nazwę koloru samochodu jako ciąg testowy (str)
+# .mileage, który przechowuje liczbę kilometrów przejechanych przez samochód jako liczbę całkowitą (int)
+# 7:50
+# Następnie utwórz instancję dwóch obiektów Car - niebieski samochód mający 20 000 kilometrów przebiegu i czerwony samochód mający 30 000 kilometrów przebiegu - i wydrukuj ich kolory oraz przebiegi. Twój wynik powinien wyglądać następująco:
+# Niebieski samochód ma 20,000 kilometrów przebiegu.
+# Czerwony samochód ma 30,000 kilometrów przebiegu.
+
+# class Car:
+#     def __init__(self, color, kilometry):
+#         self.color = color
+#         self.kilometry = kilometry
+#
+# Niebieski = Car(color = "niebieski", kilometry = 20000)
+# Czerwony = Car(color = "czerwony", kilometry = 30000)
+#
+# # print(Niebieski.color, "samochód ma ", Niebieski.kilometry, " kilometrów przebiegu")
+# # print(Czerwony.color, "samochód ma ", Czerwony.kilometry, " kilometrów przebiegu")
+#
+# for pojazdy in (Niebieski, Czerwony):   # używając pętli
+#     print(pojazdy.color, pojazdy.kilometry)
+#
+# Stwórz nowe instancje od pierwszej do szóstej pozycji w tej kolejności: F14, SU 33, AJS37, Mirage 2000, Mig 29, A10.
+# Możesz sprawdzić Podpowiedź 1, aby sprawdzić origin.
+
+# Wskazówka 1
+# SU33: Rosja
+# AJS37: Szwecja
+# Mirage2000: Francja
+# F14: USA
+# Mig29: ZSRR
+# A10: USA
+
+# Możesz utworzyć instancje w następujący sposób:
+# first_item=Jets(name, country)
+
+# class Jets:
+#     def __init__(self, name, country):
+#         self.name = name
+#         self.origin = country
+#     def samolot(self, drugi):
+#         print(self.name, self.origin)
+#         print(drugi.name, drugi.origin)
+#
+#
+# first_item= Jets(name="F14",country="USA")
+# second_item=Jets(name="SU33",country="Rosja")
+# third_item=Jets(name="AJS37",country="Szwecja")
+# fourth_item=Jets(name="Mirage 2000",country="Francja")
+# fifth_item=Jets(name="Mig 29",country="ZSRR")
+# sixth_item=Jets(name="A10",country="USA")
+#
+#
+# # first_army=[first_item.name,second_item.name,third_item.name,fourth_item.name,fifth_item.name,sixth_item.name]
+# # third_item.samolot(second_item)
+#
+# # print(first_army)
+#
+# # for ajet in (first_item, second_item, third_item, fourth_item, fifth_item, sixth_item):
+# #     ajet.samolot(first_item) #   jako drugi argument pobiera first_item
+#
+# jet_list = [Jets("F14", "USA"), Jets("SU33", "Rosja"), Jets("AJS37", "Szwecja")]
+# for jet in jet_list:
+#     jet.samolot(jet)    # dubluje bo w def są dwa printy
+
+
+# Dodaj kolejny atrybut o nazwie „quantity” do metody inicjalizacji (zwykle nazywanej konstruktorem lub __init__).
+# Następnie zdefiniuj przypisanie tego atrybutu do atrybutu self.quantity wewnątrz konstruktora.
+# Następnie utwórz 2 instancje dla: F14 i Mirage2000 z ilościami 87 i 35.
+
+# Możesz dodać parametr quantity do konstruktora w następujący sposób:
+# def __init__(self, name, country, quantity):
+# Następnie musisz przypisać ten parametr do atrybutu self, aby istniało sensowne połączenie między parametrem a atrybutem.
+
+# Możesz dodać parametr quantity do konstruktora w następujący sposób:
+# def __init__(self, name, country, quantity):
+#
+#     self.name = name
+#     self.origin = country
+#     self.quantity = quantity
+# Następnie musisz przypisać ten parametr do atrybutu self, aby istniało sensowne połączenie między parametrem a atrybutem.
+
+# Możesz tworzyć instancje klasy Jets jak poniżej:
+# first_item=Jets("F14","USA",87)
+# second_item=Jets("Mirage2000","France",35)
+
+class Jets:
+    def __init__(self, name, country, quantity):
+        self.name = name
+        self.origin = country
+        self.quantity = quantity
+
+
+first_item=Jets("F14","USA",87)
+second_item=Jets("Mirage2000","France",35)
+
+
+Jets("MIG29", "ZSRR", 10)
+Jets("SU33", "Rosja", 15)
+lista = [Jets, first_item, second_item, Jets("SU33", "Rosja", 15), Jets("MIG29", "ZSRR", 10)]
+total = 0
+for mysliwce in lista:
+    total += mysliwce.quantity
+
+print(total)
