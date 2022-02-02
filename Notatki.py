@@ -1,3 +1,4 @@
+
 temperatury = [
     37.6, 35.8, 37.6, 33.4, 34.1, 37.1, 35.9, 34.1, 37.1, 40.5, 38.5, 37.6,
     35.8, 34.5, 36.4, 38.3, 37.5, 37.7, 34.0, 35.3, 35.7, 38.9, 34.8, 34.1,
@@ -32,13 +33,45 @@ temperatury = [
 #     szesciany.append(x**3)
 # print(szesciany)
 
-def fibbonaci_numbers(n):
-    ''' zwraca liczby Fibonacciego mniejsze od n '''
-    wynik = []
-    a, b = 0, 1
-    while a < n:
-        wynik.append(a)
-        a, b = b, a+b
-    return wynik
-r = fibbonaci_numbers(200)
-print(r)
+# def fibbonaci_numbers(n):
+#     ''' zwraca liczby Fibonacciego mniejsze od n '''
+#     wynik = []
+#     a, b = 0, 1
+#     while a < n:
+#         wynik.append(a)
+#         a, b = b, a+b
+#     return wynik
+# r = fibbonaci_numbers(200)
+# print(r)
+
+# class Parrot:
+#
+#     species = "papuga"
+#
+#     # atrybuty instancji
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+#
+#     # metoda instancji
+#     def sing(self, song):
+#         return self.name + " śpiewa " + song
+#
+#     def dance(self):
+#         return self.name + " teraz tańczy"
+#
+# # utworzenie instancji klasy Parrot
+# blu = Parrot("Blu", 10)
+# woo = Parrot("Woo", 15)
+#
+# # uzyskanie dostępu do atrybutów klasy
+#
+# print(ascii(blu))
+# print(bin(3))
+# print(bin(-10))
+
+#UZ
+
+x = 885.04
+y = 1000
+print(x*1.23)
