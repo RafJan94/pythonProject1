@@ -1193,22 +1193,3 @@
 # first_item=Jets("F14","USA",87)
 # second_item=Jets("Mirage2000","France",35)
 
-class Jets:
-    def __init__(self, name, country, quantity):
-        self.name = name
-        self.origin = country
-        self.quantity = quantity
-
-
-first_item=Jets("F14","USA",87)
-second_item=Jets("Mirage2000","France",35)
-
-
-Jets("MIG29", "ZSRR", 10)
-Jets("SU33", "Rosja", 15)
-lista = [Jets, first_item, second_item, Jets("SU33", "Rosja", 15), Jets("MIG29", "ZSRR", 10)]
-total = 0
-for mysliwce in lista:
-    total += mysliwce.quantity
-
-print(total)
